@@ -22,6 +22,8 @@ def retweettwitterlist():
                 api.retweet(tweet.id)
             elif tweet.id in tweeted:
                 pass
+            except:
+                pass
         while len(tweeted) > 100:
             tweeted.clear()
 
